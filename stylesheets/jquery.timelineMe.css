@@ -1,0 +1,367 @@
+/* ---------------- *\
+   GLOBAL VARIABLES
+\* ---------------- */
+/* ------ *\
+   MIXINS
+\* ------ */
+/* -------------- *\
+   MAIN CONTAINER
+\* -------------- */
+.timeline-me-container {
+  position: relative;
+}
+.timeline-me-container:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -2px;
+  height: 100%;
+  width: 4px;
+  background: #555555;
+}
+
+/* -------------------- *\
+   GENERIC ITEM'S STYLE
+\* -------------------- */
+.timeline-me-item {
+  position: relative;
+  margin: 20px 0px;
+}
+
+.timeline-me-content {
+  position: relative;
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.timeline-me-shortcontent,
+.timeline-me-fullcontent {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #ffffff;
+  line-height: 20px;
+  border-radius: 2px;
+}
+
+.timeline-me-showmore {
+  display: block;
+}
+
+.timeline-me-showless {
+  display: none;
+}
+
+/* ----------------- *\
+   MILESTONE ELEMENT
+\* ----------------- */
+.timeline-me-milestone {
+  /* Specific for 'right' position item - default one */
+  /* Specific for 'top' position item */
+  /* Specific for 'left' position item */
+  /* Specific for 'bottom' position item */
+}
+.timeline-me-milestone .timeline-me-label {
+  position: relative;
+}
+.timeline-me-milestone .timeline-me-label .timeline-me-picto {
+  position: absolute;
+  box-sizing: content-box;
+  height: 30px;
+  width: 30px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 3px solid #555555;
+  z-index: 100;
+  text-align: center;
+  overflow: hidden;
+}
+.timeline-me-milestone.timeline-me-right, .timeline-me-milestone:not(.timeline-me-top):not(.timeline-me-left):not(.timeline-me-bottom) {
+  width: 50%;
+  margin-left: 50%;
+}
+.timeline-me-milestone.timeline-me-right .timeline-me-label, .timeline-me-milestone:not(.timeline-me-top):not(.timeline-me-left):not(.timeline-me-bottom) .timeline-me-label {
+  height: 36px;
+  line-height: 36px;
+  padding-left: 39px;
+  margin-left: -18px;
+}
+.timeline-me-milestone.timeline-me-right .timeline-me-label .timeline-me-picto, .timeline-me-milestone:not(.timeline-me-top):not(.timeline-me-left):not(.timeline-me-bottom) .timeline-me-label .timeline-me-picto {
+  top: 0;
+  left: 0;
+}
+.timeline-me-milestone.timeline-me-top {
+  margin: auto;
+  text-align: center;
+}
+.timeline-me-milestone.timeline-me-top .timeline-me-label {
+  padding-bottom: 39px;
+}
+.timeline-me-milestone.timeline-me-top .timeline-me-label .timeline-me-picto {
+  bottom: 0px;
+  left: 50%;
+  margin-left: -18px;
+}
+.timeline-me-milestone.timeline-me-left {
+  width: 50%;
+  margin-right: 50%;
+  text-align: right;
+}
+.timeline-me-milestone.timeline-me-left .timeline-me-label {
+  height: 36px;
+  line-height: 36px;
+  padding-right: 39px;
+  margin-right: -18px;
+}
+.timeline-me-milestone.timeline-me-left .timeline-me-label .timeline-me-picto {
+  top: 0;
+  right: 0px;
+}
+.timeline-me-milestone.timeline-me-bottom {
+  margin: auto;
+  text-align: center;
+}
+.timeline-me-milestone.timeline-me-bottom .timeline-me-label {
+  padding-top: 39px;
+}
+.timeline-me-milestone.timeline-me-bottom .timeline-me-label .timeline-me-picto {
+  top: 0px;
+  left: 50%;
+  margin-left: -18px;
+}
+.timeline-me-milestone .timeline-me-shortcontent {
+  display: none;
+}
+
+/* ----------------- *\
+   SMALLITEM ELEMENT
+\* ----------------- */
+.timeline-me-smallitem {
+  /* Specific for 'left' position item - default one */
+  /* Specific for 'top' position item */
+  /* Specific for 'right' position item */
+  /* Specific for 'bottom' position item */
+}
+.timeline-me-smallitem .timeline-me-label {
+  position: absolute;
+}
+.timeline-me-smallitem .timeline-me-label .timeline-me-picto {
+  position: absolute;
+  box-sizing: content-box;
+  height: 30px;
+  width: 30px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 3px solid #555555;
+  z-index: 100;
+  text-align: center;
+  overflow: hidden;
+}
+.timeline-me-smallitem.timeline-me-left .timeline-me-label, .timeline-me-smallitem:not(.timeline-me-top):not(.timeline-me-right):not(.timeline-me-bottom) .timeline-me-label {
+  height: 36px;
+  line-height: 36px;
+  left: 50%;
+  top: -6px;
+  margin-left: -18px;
+  text-align: left;
+  padding-left: 39px;
+}
+.timeline-me-smallitem.timeline-me-left .timeline-me-label .timeline-me-picto, .timeline-me-smallitem:not(.timeline-me-top):not(.timeline-me-right):not(.timeline-me-bottom) .timeline-me-label .timeline-me-picto {
+  top: 0;
+  left: 0px;
+}
+.timeline-me-smallitem.timeline-me-left .timeline-me-content-container, .timeline-me-smallitem:not(.timeline-me-top):not(.timeline-me-right):not(.timeline-me-bottom) .timeline-me-content-container {
+  width: 40%;
+  margin-left: 10%;
+  padding-right: 25px;
+}
+.timeline-me-smallitem.timeline-me-left .timeline-me-fullcontent:before,
+.timeline-me-smallitem.timeline-me-left .timeline-me-shortcontent:before, .timeline-me-smallitem:not(.timeline-me-top):not(.timeline-me-right):not(.timeline-me-bottom) .timeline-me-fullcontent:before,
+.timeline-me-smallitem:not(.timeline-me-top):not(.timeline-me-right):not(.timeline-me-bottom) .timeline-me-shortcontent:before {
+  background-color: inherit;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  height: 10px;
+  width: 10px;
+  right: -5px;
+}
+.timeline-me-smallitem.timeline-me-right .timeline-me-label {
+  height: 36px;
+  line-height: 36px;
+  right: 50%;
+  top: -6px;
+  margin-right: -18px;
+  text-align: right;
+  padding-right: 39px;
+}
+.timeline-me-smallitem.timeline-me-right .timeline-me-label .timeline-me-picto {
+  top: 0;
+  right: 0px;
+}
+.timeline-me-smallitem.timeline-me-right .timeline-me-content-container {
+  width: 40%;
+  margin-left: 50%;
+  padding-left: 25px;
+}
+.timeline-me-smallitem.timeline-me-right .timeline-me-fullcontent:before,
+.timeline-me-smallitem.timeline-me-right .timeline-me-shortcontent:before {
+  background-color: inherit;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  height: 10px;
+  width: 10px;
+  left: -5px;
+}
+.timeline-me-smallitem .timeline-me-content-container {
+  box-sizing: border-box;
+}
+.timeline-me-smallitem .timeline-me-fullcontent,
+.timeline-me-smallitem .timeline-me-shortcontent {
+  padding: 10px;
+}
+.timeline-me-smallitem .timeline-me-fullcontent:before,
+.timeline-me-smallitem .timeline-me-shortcontent:before {
+  content: '';
+  position: absolute;
+  top: 7px;
+}
+.timeline-me-smallitem .timeline-me-displayfull .timeline-me-shortcontent, .timeline-me-smallitem.timeline-me-displayfull .timeline-me-shortcontent {
+  display: none;
+}
+.timeline-me-smallitem .timeline-me-displayfull .timeline-me-fullcontent, .timeline-me-smallitem.timeline-me-displayfull .timeline-me-fullcontent {
+  display: block;
+}
+.timeline-me-smallitem .timeline-me-displayfull .timeline-me-showmore, .timeline-me-smallitem.timeline-me-displayfull .timeline-me-showmore {
+  display: none;
+}
+.timeline-me-smallitem .timeline-me-displayfull .timeline-me-showless, .timeline-me-smallitem.timeline-me-displayfull .timeline-me-showless {
+  display: block;
+}
+.timeline-me-smallitem .timeline-me-shortcontent {
+  display: block;
+}
+.timeline-me-smallitem .timeline-me-fullcontent {
+  display: none;
+}
+
+/* --------------- *\
+   BIGITEM ELEMENT
+\* --------------- */
+.timeline-me-bigitem .timeline-me-label {
+  position: relative;
+  margin-bottom: 10px;
+  text-align: center;
+  padding-bottom: 39px;
+}
+.timeline-me-bigitem .timeline-me-label .timeline-me-picto {
+  position: absolute;
+  box-sizing: content-box;
+  height: 30px;
+  width: 30px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 3px solid #555555;
+  z-index: 100;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -18px;
+  text-align: center;
+  overflow: hidden;
+}
+.timeline-me-bigitem .timeline-me-content-container {
+  width: 80%;
+  margin: auto;
+}
+.timeline-me-bigitem .timeline-me-fullcontent,
+.timeline-me-bigitem .timeline-me-shortcontent {
+  padding: 20px;
+}
+.timeline-me-bigitem .timeline-me-flipped .timeline-me-showmore, .timeline-me-bigitem.timeline-me-flipped .timeline-me-showmore {
+  display: none;
+}
+.timeline-me-bigitem .timeline-me-flipped .timeline-me-showless, .timeline-me-bigitem.timeline-me-flipped .timeline-me-showless {
+  display: block;
+}
+
+/* --------------- *\
+   BIGITEM 3D-FLIP
+\* --------------- */
+/* entire container, keeps perspective */
+.timeline-me-bigitem {
+  -moz-perspective: 1500px;
+  -webkit-perspective: 1500px;
+  -ms-perspective: 1500px;
+  -o-perspective: 1500px;
+  perspective: 1500px;
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  /* flip the pane when hovered */
+  /* Configure flip speed */
+  /* Hide back of pane during flip */
+  /* Front pane, placed above back */
+  /* Back pane, initially hidden pane */
+}
+.timeline-me-bigitem.timeline-me-flipped .timeline-me-content-container {
+  -moz-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.timeline-me-bigitem .timeline-me-content-container {
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -ms-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: relative;
+}
+.timeline-me-bigitem .timeline-me-shortcontent, .timeline-me-bigitem .timeline-me-fullcontent {
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.timeline-me-bigitem .timeline-me-shortcontent {
+  z-index: 2;
+  -moz-transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+.timeline-me-bigitem .timeline-me-fullcontent {
+  -moz-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
