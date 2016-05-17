@@ -33,8 +33,8 @@ include("conn/conn.php");
     <form   name= "kk" method="post" enctype="multipart/form-data" action="Case_Study_del_ok.php" >      
     <tr align="center">
         <td width="10">Num.</td>
-        <td width="20%">Case Study Name </td>
-        <td width="70%">Case Study Description</td>
+        <td width="20%">Visit Name </td>
+        <td width="70%">Visit Description</td>
 		<?php if (0==$_SESSION[gid]){ ?>
         <td width="3%">UserId</td>
         <td width="10">User Name</td>
@@ -85,14 +85,14 @@ include("conn/conn.php");
 
 
 		if(session_casestudy.length == 0){ 
-            alert("Please select at least one casestudy!");
+            alert("Please select at least one Visit!");
 			return false;
 //        }else if(session_casestudy.length > 1){ 
 //            alert("Please no more 1 casestudy!");
 //			window.location='append_se_to_CaseStudy.php';
 //			return false;
         } else { 
-			var flag =confirm("Do you want to delete these Case Studies?");
+			var flag =confirm("Do you want to delete these Visits?");
 			if (flag == true){
 			form.submit();
 			}else{
@@ -103,7 +103,7 @@ include("conn/conn.php");
 </script>
 
 	<input type="hidden" id="test" name="test"/>
-    <center><input type="button" value="Delete the selected CaseStudies" name="upload" class="btn btn-success" onClick="return Check_Submit(kk)"/>
+    <center><input type="button" value="Delete the selected Visits" name="upload" class="btn btn-success" onClick="return Check_Submit(kk)"/>
 	<input name="Submit2" type="button" class="btn btn-danger" value="Return to Index" onClick="window.location.href='index.php'"/>
     </form> 
     </table>

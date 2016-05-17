@@ -33,7 +33,7 @@ include("conn/conn.php");
     <form   name= "kk" method="post" enctype="multipart/form-data" action="Remove_scenarios_ok.php" >      
     <tr align="center">
         <td width="10">Num.</td>
-        <td width="20%">Case Study Name </td>
+        <td width="20%">Visit Name </td>
         <td width="20%">Scenario Name</td>
         <td width="50%">Scenario Description</td>
         <td style="padding:5px;">&nbsp;User ID</td>

@@ -14,7 +14,7 @@ for( $i=0;$i<count($sel_sounds);$i++){
 		echo "<script language='javascript'></script>";
 	}
 }
-echo "<script language='javascript'>alert('Case Study has been deleted!');</script>";
+echo "<script language='javascript'>alert('Visit has been deleted!');</script>";
 
 echo "<script language='javascript'>window.location='Case_Study_del.php';</script>";
 

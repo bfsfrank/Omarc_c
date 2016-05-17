@@ -36,7 +36,7 @@ include("conn/conn.php");
 	if(0==$_SESSION[gid]){ // for super_user
 	?>
         <td width="10">Num.</td>
-        <td width="20%">Case Study Name </td>
+        <td width="20%">Visit Name </td>
         <td width="20%">Scenario Name </td>
         <td width="70%">Scenario Description</td>
         <td width="10">User ID</td>
@@ -67,7 +67,7 @@ include("conn/conn.php");
 	} else {// for regular user
 	?>    
         <td width="10">Num.</td>
-        <td width="20%">Case Study Name </td>
+        <td width="20%">Visit Name </td>
         <td width="20%">Scenario Name </td>
         <td width="70%">Scenario Description</td>
       </tr>

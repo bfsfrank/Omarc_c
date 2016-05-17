@@ -130,7 +130,7 @@ include("conn/conn.php");
     <form   name= "kk" method="post" enctype="multipart/form-data"  >  
 
 	<label for="name">If the sounds' descriptions are needed, please hover over the sound block in the left sounds list.<br></label>
-    <h7><br>Current Case Study Name: <?php echo $_SESSION[current_cs_name];?><br>
+    <h7><br>Current Visit Name: <?php echo $_SESSION[current_cs_name];?><br>
     <h7>Current Scenario Name: <?php echo $_SESSION[Scenario_Name];?><br>
  
   <link rel="stylesheet" href="javascripts/jquery-ui-1.11.4/jquery-ui.min.css">

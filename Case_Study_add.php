@@ -14,7 +14,7 @@
 function check(form){
 	
 	if(form.CS_Name.value==""){
-		alert("Please input Case Study Name!");form.CS_Name.focus();return false;
+		alert("Please input Visit Name!");form.CS_Name.focus();return false;
 	}
 	//CKEDITOR.replace('CS_Description'); 
 	//var editor = CKEDITOR.replace("CS_Description");
@@ -41,7 +41,7 @@ form.submit();
 	  <tr>
 		<td height="400" align="center" valign="top" style="padding:5px;"><table width="98%" height="400"  border="0" cellpadding="0" cellspacing="0">
 		  <tr>
-			<td height="22" valign="top" class="word_green">Add Case Study: &gt </td>
+			<td height="22" valign="top" class="word_green">Add a Visit: &gt </td>
 		  </tr>
 		  <tr>
 			<td align="center" valign="top"><table width="100%" height="400"  border="0" cellpadding="0" cellspacing="0">
@@ -50,18 +50,18 @@ form.submit();
 
 	<table width="600" height="350"  border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
       <tr>
-        <td width="173" align="center">Case Study Name:</td>
+        <td width="173" align="center">Visit Name:</td>
         <td width="427" height="39">
           <input name="CS_Name" type="text" id="CS_Name"></td>
       </tr>
       <tr>
-        <td align="center">Case Study <br> Description:</td>
+        <td align="center">Visit <br> Description:</td>
          <td><textarea name="CS_Description" cols="60" rows="20" class="ckeditor" id="CS_Description"></textarea>
       </tr>
       <tr>
         <td  align="center">&nbsp;</td>
-        <td><input name="Submit" type="submit" title="In next stages, the sounds and scenarios may be added to this Case Study!" class="btn btn-success" value="Next Stage" onClick="return check(form1)">&nbsp;
-			<input name="Submit2" title="Give up to create a new Case Study!" type="button" class="btn btn-danger" value="Cancel" onClick="history.back();"></td>
+        <td><input name="Submit" type="submit" title="In next stages, the sounds and scenarios may be added to this Visit!" class="btn btn-success" value="Next Stage" onClick="return check(form1)">&nbsp;
+			<input name="Submit2" title="Give up to create a new Visit!" type="button" class="btn btn-danger" value="Cancel" onClick="history.back();"></td>
       </tr>
     </table>
 	</form>

@@ -45,7 +45,7 @@ include("conn/conn.php");
 
 <div class="container" align="center" width="75%">
    <h3 align="center">Add Scenario</h3>
-   <br><h5 align="center" valign="top" style="color:#039; text-emphasis:accent"> Current Case Study Name: <?php echo $_SESSION[current_cs_name];?> </h5>
+   <br><h5 align="center" valign="top" style="color:#039; text-emphasis:accent"> Current Visit Name: <?php echo $_SESSION[current_cs_name];?> </h5>
    <div align="center" class="row" >
       <div align="center" width="75%"  style="background-color: #dedef8;">
     <p>

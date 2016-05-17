@@ -36,7 +36,7 @@ include("conn/conn.php");
 	if(0==$_SESSION[gid]){
 	?>
         <td width="10">Num.</td>
-        <td width="20%">Case Study Name </td>
+        <td width="20%">Visit Name </td>
         <td width="20%">Scenario Name</td>
         <td width="50%">Scenario Description</td>
         <td style="padding:5px;">&nbsp;User ID</td>
@@ -74,7 +74,7 @@ include("conn/conn.php");
 	} else {
 	?>
         <td width="10">Num.</td>
-        <td width="20%">Case Study Name </td>
+        <td width="20%">Visit Name </td>
         <td width="20%">Scenario Name</td>
         <td width="50%">Scenario Description</td>
       </tr>

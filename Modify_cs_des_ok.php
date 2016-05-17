@@ -9,7 +9,7 @@ $description=$_POST[CS_Description];
 
 //$inTime=date("Y-m-d");
 $sql=mysql_query("update case_study set name='$name', description='$description' where id='$_SESSION[current_modifying_cs_id]'");
-echo "<script language='javascript'>alert('Success to Modify the Case Study! \\n \\n Return to the Index');
+echo "<script language='javascript'>alert('Success to Modify the Visit! \\n \\n Return to the Index');
 window.location='index.php';</script>";
 
 ?>
