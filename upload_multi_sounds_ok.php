@@ -1,11 +1,6 @@
 <?php 
-     $con=mysql_connect("localhost","root","") or die("Database Connection Failed!".mysql_error());
-     mysql_select_db("auscultation",$con) or die("Cannot visit the Database!".mysql_error());
-     mysql_query("set names gb2312"); 
- if (!$con)
- {
-	 die('Could not connect: ' . mysql_error());
- }
+include ("check_login.php"); 
+include("conn/conn.php");
 
  $allowed = array("mp3");
  $GoodToUpload = 1; 
