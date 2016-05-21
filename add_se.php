@@ -31,7 +31,7 @@ include("conn/conn.php");
     function check_se_description(form){
 
 		if(form.Scenario_Name.value==""){ 
-            alert("Please input Scenario Name!");
+            alert("Please input Visit Name!");
 			return false;
         }else /*if(form.Scenario_Description.value==""){ 
             alert("Please input Scenario Description!");
@@ -44,8 +44,8 @@ include("conn/conn.php");
 </script>
 
 <div class="container" align="center" width="75%">
-   <h3 align="center">Add Scenario</h3>
-   <br><h5 align="center" valign="top" style="color:#039; text-emphasis:accent"> Current Visit Name: <?php echo $_SESSION[current_cs_name];?> </h5>
+   <h3 align="center">Add Visit</h3>
+   <br><h5 align="center" valign="top" style="color:#039; text-emphasis:accent"> Current Case Study Name: <?php echo $_SESSION[current_cs_name];?> </h5>
    <div align="center" class="row" >
       <div align="center" width="75%"  style="background-color: #dedef8;">
     <p>
@@ -53,9 +53,9 @@ include("conn/conn.php");
     <form  draggable="true" name= "kk" method="post" enctype="multipart/form-data" action="add_se_ok.php">      
     <tr> 
     <table border="0" width="60%" cellpadding="4">
-    <td align="center" width="30%" ><h4>Scenario Name</td> 
+    <td align="center" width="30%" ><h4>Visit Name</td> 
     <td align="center" width=10%>
-    <td align="center" width="50%" ><h4>Scenario Description</td> 
+    <td align="center" width="50%" ><h4>Visit Description</td> 
     </tr>
         <tr> 
         <td align="center" width=25%><input type="text" name="Scenario_Name" size=20>
@@ -63,8 +63,8 @@ include("conn/conn.php");
         <td align="center" width=50%><textarea name="Scenario_Description" cols="80" rows="5" class="ckeditor" id="Sounds_Description"></textarea>
 		</tr>
     </table> 
-    <center><input type="submit"  title="In next page, the sounds of this scenario will be placed!" value="Add Sounds to this Scenario"  name="upload" class="btn btn-success" onClick="return check_se_description(kk)"/>
-	<input name="Submit2" title="No more scenarios are needed to add, go back to index page!" type="button" class="btn btn-danger" value="Back to Index" onClick="window.location.href='index.php'"/>
+    <center><input type="submit"  title="In next page, the sounds of this Visit will be placed!" value="Add Sounds to this Visit"  name="upload" class="btn btn-success" onClick="return check_se_description(kk)"/>
+	<input name="Submit2" title="No more Visits are needed to add, go back to index page!" type="button" class="btn btn-danger" value="Back to Index" onClick="window.location.href='index.php'"/>
     </form> 
     <tr>
     <table width="400" > 

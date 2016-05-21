@@ -38,7 +38,7 @@ $_SESSION[Scenario_Name]=null;
             <td height="72" valign="top" background="Images/main_booksort_1.gif"><table width="740"  border="1" cellpadding="0" cellspacing="0" bordercolor="#0" bordercolordark="#D2E3E6" bordercolorlight="#FFFFFF">
               <tr align="center">
 				<td width="2%">Num. </td>
-                <td width="10%">Visit Name </td>
+                <td width="10%">Case Study Name </td>
                 <td width="22%">Description</td>
                 <?php if (0==$_SESSION[gid]){ ?>
                 <td width="3%">UserId</td>

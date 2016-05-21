@@ -33,8 +33,8 @@ include("conn/conn.php");
     <form name= "kk" method="post" enctype="multipart/form-data" action="Modify_cs_des_change.php" >      
     <tr align="center">
         <td width="10">Num.</td>
-        <td width="20%">Visit Name </td>
-        <td width="70%">Visit Description</td>
+        <td width="20%">Case Study Name </td>
+        <td width="70%">Case Study Description</td>
         <?php if (0==$_SESSION[gid]){ ?>
         <td width="3%">UserId</td>
         <td width="10%">User Name</td>
@@ -49,7 +49,7 @@ include("conn/conn.php");
             ?>
       <tr>
         <td height="25" align="center"><?php echo $i;?></td>
-        <td style="padding:5px;"><label><a name="aa" title="Click to select this Visit" style="cursor:pointer" onClick="return Check_Submit(kk,<?php echo $info[id];?>)" ><?php echo $info[name];?></label>
+        <td style="padding:5px;"><label><a name="aa" title="Click to select this Case Study" style="cursor:pointer" onClick="return Check_Submit(kk,<?php echo $info[id];?>)" ><?php echo $info[name];?></label>
         <td style="padding:5px;">&nbsp;<?php echo $info[description];?></td>
         <?php if (0==$_SESSION[gid]){ ?>
         <td align="center" style="padding:5px; ">&nbsp;<?php echo $info[owner];?></td>

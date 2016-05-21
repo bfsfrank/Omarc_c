@@ -12,7 +12,7 @@ $_SESSION[Scenario_Des]=$Scenario_Description; // we add scenario after pair sou
 
 //$inTime=date("Y-m-d");
 
-echo "<script>   alert('Please proceed to add sounds to scenario');
+echo "<script>   alert('Please proceed to add sounds to visit');
 window.location='add_se_bind.php';</script>";
 
 ?>

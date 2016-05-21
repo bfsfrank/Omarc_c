@@ -11,7 +11,7 @@ $Sounds_Description=$_POST[Sounds_Description];
 
 //$inTime=date("Y-m-d");
 $sql=mysql_query("insert into sounds(soundName,soundDescription,file )values('$sounds_given_name','$Sounds_Description','$sounds_file_name')");
-echo "<script language='javascript'>alert('Success to Add Sound! If want to add scenario, please click add scenario button!');
+echo "<script language='javascript'>alert('Success to Add Sound! If want to add visit, please click add visit button!');
 window.location='upload_Sounds.php';</script>";
 
 ?>

@@ -36,9 +36,9 @@ include("conn/conn.php");
 	if(0==$_SESSION[gid]){ // for super_user
 	?>
         <td width="10">Num.</td>
+        <td width="20%">Case Study Name </td>
         <td width="20%">Visit Name </td>
-        <td width="20%">Scenario Name </td>
-        <td width="70%">Scenario Description</td>
+        <td width="70%">Visit Description</td>
         <td width="10">User ID</td>
         <td width="10%">User Name</td>
       </tr>
@@ -51,7 +51,7 @@ include("conn/conn.php");
       <tr>
         <td height="25" align="center"><?php echo $i;?></td>
         <td height="25" align="center"><?php echo $info[name];?></td>
-        <td style="padding:5px;"align="center"><label><a name="aa" title="Click to select this Scenario" style="cursor:pointer" onClick="return Check_Submit(kk,<?php echo $info[scenariosId];?>)" ><?php echo $info[scenarios_name];?></label>
+        <td style="padding:5px;"align="center"><label><a name="aa" title="Click to select this Visit" style="cursor:pointer" onClick="return Check_Submit(kk,<?php echo $info[scenariosId];?>)" ><?php echo $info[scenarios_name];?></label>
         <td style="padding:5px;">&nbsp;<?php echo $info[scenarios_description];?></td>
         <td height="25" align="center"><?php echo $info[owner];?></td>
         <td height="25" align="center"><?php echo $info[username];?></td>
@@ -67,9 +67,9 @@ include("conn/conn.php");
 	} else {// for regular user
 	?>    
         <td width="10">Num.</td>
+        <td width="20%">Case Study Name </td>
         <td width="20%">Visit Name </td>
-        <td width="20%">Scenario Name </td>
-        <td width="70%">Scenario Description</td>
+        <td width="70%">Visit Description</td>
       </tr>
       <?php
             $sql=mysql_query("select * from scenarios as a INNER JOIN case_study_details as b on a.scenariosId=b.scenario_id INNER JOIN case_study as c on c.id=b.cs_id where c.owner='$_SESSION[uid]'");
@@ -80,7 +80,7 @@ include("conn/conn.php");
       <tr>
         <td height="25" align="center"><?php echo $i;?></td>
         <td height="25" align="center"><?php echo $info[name];?></td>
-        <td style="padding:5px;" align="center"><label><a name="aa" title="Click to select this Scenario" style="cursor:pointer" onClick="return Check_Submit(kk,<?php echo $info[scenariosId];?>)" ><?php echo $info[scenarios_name];?></label>
+        <td style="padding:5px;" align="center"><label><a name="aa" title="Click to select this Visit" style="cursor:pointer" onClick="return Check_Submit(kk,<?php echo $info[scenariosId];?>)" ><?php echo $info[scenarios_name];?></label>
         <td style="padding:5px;">&nbsp;<?php echo $info[scenarios_description];?></td>
       </tr>
       <?php 

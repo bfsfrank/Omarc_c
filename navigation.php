@@ -32,25 +32,25 @@ a:hover {
 		<?php 
 		 if (0!=$_SESSION[gid]) {
 		 ?>
-         <li ><a href="Case_Study_add.php">Add a Visit </a></li>
+         <li ><a href="Case_Study_add.php">Add Case study </a></li>
          <?php
 		 }
 		 ?>
-         <li ><a href="Case_Study_del.php">Delete Visits </a></li>
-         <li  class="dropdown"><a href="#"class="dropdown-toggle" data-toggle="dropdown">Modify Visits 
+         <li ><a href="Case_Study_del.php">Delete Case study </a></li>
+         <li  class="dropdown"><a href="#"class="dropdown-toggle" data-toggle="dropdown">Modify Case study 
   <span class="caret"></span>
             <ul class="dropdown-menu">
-               <li><a href="Modify_cs_des_select.php">Modify Visit Description</a></li>
+               <li><a href="Modify_cs_des_select.php">Modify Case Study Description</a></li>
                <?php 
 		 if (1==$_SESSION[gid]) {
 		 ?>
-               <li><a href="Append_sc_2_cs_select.php">Append Scenarios to a Visit</a></li>
+               <li><a href="Append_sc_2_cs_select.php">Append Visits to Case Study</a></li>
                <?php
 		 }
 		 ?>
-               <li><a href="Remove_sc_from_cs_select.php">Remove Scenarios from a Visit</a></li>
-               <li><a href="Modify_sc_select.php">Modify Scenario Name/Description</a></li>
-               <li><a href="Modify_sc_bind_select.php">Modify Sounds Positions in Scenario</a></li>
+               <li><a href="Remove_sc_from_cs_select.php">Remove Visits from Case Study</a></li>
+               <li><a href="Modify_sc_select.php">Modify Visit Name/Description</a></li>
+               <li><a href="Modify_sc_bind_select.php">Modify Sounds Positions in Visit</a></li>
             </ul>
          </li>
          <li ><a href="upload_Sounds_mu_only.php">Upload Sounds </a></li>

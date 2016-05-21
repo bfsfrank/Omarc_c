@@ -50,6 +50,6 @@ $_SESSION[current_cs_id]=$info[id];
 $sql=mysql_query("insert into case_study_details(cs_id,scenario_id,title,description)values('$_SESSION[current_cs_id]','$_SESSION[current_sc_id]','$_SESSION[Scenario_Name]','$_SESSION[Scenario_Des]')");
 $sql=mysql_query("update case_study_details set sequence =case_study_scenario_link_id where scenario_id ='$_SESSION[current_sc_id]'");
 			
-echo "Succes to add scenario and pair sounds! \n Transfer to Add Scenario page to add more scenarios to implement the process of add visit, if need! \n";
+echo "Succes to add visit and pair sounds! \n Transfer to Add visit page to add more visits to implement the process of add case study, if need! \n";
 
 ?>

@@ -25,7 +25,7 @@ $info=mysql_fetch_array($sql);
 function check(form){
 	
 	if(form.CS_Name.value==""){
-		alert("Please input Scenario Name!");form.CS_Name.focus();return false;
+		alert("Please input visit Name!");form.CS_Name.focus();return false;
 	}
 	
 	//CKEDITOR.replace('CS_Description'); 
@@ -58,7 +58,7 @@ function check(form){
 	  <tr>
 		<td height="400" align="center" valign="top" style="padding:5px;"><table width="98%" height="400"  border="0" cellpadding="0" cellspacing="0">
 		  <tr>
-			<td height="22" valign="top" class="word_green">Modify Scenario: &gt </td>
+			<td height="22" valign="top" class="word_green">Modify visit: &gt </td>
 		  </tr>
 		  <tr>
 			<td align="center" valign="top"><table width="100%" height="400"  border="0" cellpadding="0" cellspacing="0">
@@ -67,7 +67,7 @@ function check(form){
 
 	<table width="600" height="350"  border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
       <tr>
-        <td width="60" align="center">Scenario Name:</td>
+        <td width="60" align="center">visit Name:</td>
         <td width="200" height="39">
           <input name="CS_Name" type="text" id="CS_Name" value="<?php echo $info[scenarios_name]; ?>"></td>
 
@@ -78,7 +78,7 @@ function check(form){
         </td>
         </tr>
       <tr>
-        <td align="center">Scenario <br> Description:</td>
+        <td align="center">visit <br> Description:</td>
          <td><textarea name="CS_Description" cols="60" rows="10" class="ckeditor" id="CS_Description" ><?php echo $info[scenarios_description]; ?></textarea>
       </tr>
       <tr>
@@ -94,9 +94,9 @@ function check(form){
       <input type="button" class="btn btn-primary" value="Add New Sounds" onClick="window.location.href='upload_Sounds_mu.php'" />
     </tr>
     <tr align="center" height="22" class="word_orange"  hidden="1">
-            <td height="22" class="word_orange" >If your sounds are already uploaded, please add scenarios directly!
+            <td height="22" class="word_orange" >If your sounds are already uploaded, please add visits directly!
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<input type="button"  align="right" class="btn btn-primary" value="Add Scenarios" onClick="window.location.href='add_se.php'" />
+		<input type="button"  align="right" class="btn btn-primary" value="Add visits" onClick="window.location.href='add_se.php'" />
 	</tr>
 	</td>
   </tr>

@@ -26,7 +26,7 @@ class="tableBorder_gray">
 
 width="98%" height="487"  border="0" cellpadding="0" cellspacing="0">
 		  <tr>
-			<td height="22" valign="top" class="word_orange">Add a visit: &gt </td>
+			<td height="22" valign="top" class="word_orange">Add Case Study: &gt </td>
 		  </tr>
               <td align="center" valign="top">
 <?php

@@ -11,8 +11,8 @@ $_SESSION[current_cs_Description]=$description;
 if (0==$_SESSION[gid])
 $sql=mysql_query("insert into case_study(name,description,owner)values('$name','$description','$_SESSION[uid]')");
 else $sql=mysql_query("insert into case_study(name,description,owner)values('$name','$description','$_SESSION[uid]')");
-echo "<script language='javascript'>alert('Success to Add a visit! \\n \\n In next stages, sounds may be uploaded, and scenarios are added to this Visit!');
-window.location='upload_Sounds_mu.php';</script>";
+echo "<script language='javascript'>alert('Success to Add Case Study! \\n \\n In next stages, visits are added to this Case Study!');
+window.location='add_se.php';</script>";
 
 ?>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">

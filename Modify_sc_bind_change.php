@@ -125,7 +125,7 @@ $info_sc=mysql_fetch_array($sql);
 </script>
 
 <div class="container" align="center" width="75%" >
-   <h4 align="center">Add Scenario</h4>
+   <h4 align="center">Add Visit</h4>
    <div align="center" class="row" >
 
       <div align="center" width="75%" >
@@ -136,7 +136,7 @@ $info_sc=mysql_fetch_array($sql);
     <form   name= "kk" method="post" enctype="multipart/form-data"  >  
 
 	<label for="name">If the sounds' descriptions are needed, please hover over the sound block in the left sounds list.<br></label><br>
-    <h7>Current Scenario Name: <?php echo $info_sc[scenarios_name];?><br>
+    <h7>Current Visit Name: <?php echo $info_sc[scenarios_name];?><br>
  
   <link rel="stylesheet" href="javascripts/jquery-ui-1.11.4/jquery-ui.min.css">
   <script src="javascripts/jquery-ui-1.11.4/jquery-ui.min.js"></script>
@@ -1520,7 +1520,7 @@ Your browser does not support the audio element.
 </table>
 </div>    
 
-    <center><input type="button" value="Confirm Sounds for this Scenario" name="upload" class="btn btn-primary" onClick="return check_description(kk);"/>
+    <center><input type="button" value="Confirm Sounds for this Visit" name="upload" class="btn btn-primary" onClick="return check_description(kk);"/>
 <!--	<input name="Submit2" type="button" class="btn btn-primary" value="Back, Re-select Sounds" onClick="window.location.href='add_se_sounds_select.php'"/> !-->
     <input name="Submit2" type="button" class="btn btn-primary" value="Cancel, Return to Index" onClick="window.location.href='index.php'"/>
     </form> 

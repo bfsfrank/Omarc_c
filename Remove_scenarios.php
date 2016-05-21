@@ -26,16 +26,16 @@ include("conn/conn.php");
       <tr>
         <td height="148" valign="top"><table width="738"  border="0" cellspacing="0" cellpadding="0">
           <tr>
-            <td width="753" height="44" style="font-size:24px">&nbsp; Remove Scenarios</td>
+            <td width="753" height="44" style="font-size:24px">&nbsp; Remove visits</td>
           </tr>
           <tr>
     <table align="center" width="100%" border="bordered" > 
     <form   name= "kk" method="post" enctype="multipart/form-data" action="Remove_scenarios_ok.php" >      
     <tr align="center">
         <td width="10">Num.</td>
-        <td width="20%">Visit Name </td>
-        <td width="20%">Scenario Name</td>
-        <td width="50%">Scenario Description</td>
+        <td width="20%">Case Study Name </td>
+        <td width="20%">visit Name</td>
+        <td width="50%">visit Description</td>
         <td style="padding:5px;">&nbsp;User ID</td>
       </tr>
       <?php
@@ -87,7 +87,7 @@ include("conn/conn.php");
 
 
 		if(session_scenario.length ==0){ 
-            alert("Please select at least one scenario!");
+            alert("Please select at least one visit!");
 			return false;
 //        }else if(session_casestudy.length > 1){ 
 //            alert("Please no more 1 casestudy!");
@@ -95,7 +95,7 @@ include("conn/conn.php");
 //			return false;
         } else { 
 			
-			var flag =confirm("Do you want to remove these Scenarios?");
+			var flag =confirm("Do you want to remove these visits?");
 			if (flag == true){
 			form.submit();
 			}else{
@@ -106,7 +106,7 @@ include("conn/conn.php");
 </script>
 
 	<input type="hidden" id="test" name="test"/>
-    <center><input type="button" value="Remove the selected Scenarios" name="upload" class="btn btn-success" onClick="return Check_Submit(kk)"/>
+    <center><input type="button" value="Remove the selected visits" name="upload" class="btn btn-success" onClick="return Check_Submit(kk)"/>
 	<input name="Submit2" type="button" class="btn btn-danger" value="Return to Index" onClick="window.location.href='index.php'"/>
     </form> 
     </table>

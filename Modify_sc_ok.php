@@ -10,7 +10,7 @@ $description=$_POST[CS_Description];
 $sql=mysql_query("update scenarios set scenarios_name='$name', scenarios_description='$description' where scenariosId='$_SESSION[current_modifying_sc_id]'");
 $sql=mysql_query("update case_study_details set title='$name', description='$description' where scenario_id='$_SESSION[current_modifying_sc_id]'");
 
-echo "<script language='javascript'>alert('Success to Modify the Scenario! \\n \\n Return to the Index');
+echo "<script language='javascript'>alert('Success to Modify the visit! \\n \\n Return to the Index');
 window.location='index.php';</script>";
 
 ?>

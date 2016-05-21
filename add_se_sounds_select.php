@@ -69,7 +69,7 @@ include("conn/conn.php");
 </script>
 
 <div class="container" align="center" width="75%">
-   <h3 align="center">Add Scenario</h3>
+   <h3 align="center">Add visit</h3>
 
    <div align="center" class="row" >
 
@@ -105,7 +105,7 @@ include("conn/conn.php");
 
 </table> 
 	<input type="hidden" id="test" name="test"/>
-    <center><input type="submit" value="Select These Sounds to Scenario" name="upload" class="btn btn-primary" onClick="return check_description(kk)"/>
+    <center><input type="submit" value="Select These Sounds to visit" name="upload" class="btn btn-primary" onClick="return check_description(kk)"/>
 	<input name="Submit2" type="button" class="btn btn-primary" value="Cancel, Return to Index" onClick="window.location.href='index.php'"/>
     </form> 
     

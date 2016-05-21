@@ -14,7 +14,7 @@ for( $i=0;$i<count($sel_sounds);$i++){
 		echo "<script language='javascript'></script>";
 	}
 }
-echo "<script language='javascript'>alert('Scenarios have been removed!');</script>";
+echo "<script language='javascript'>alert('Visits have been removed!');</script>";
 
 echo "<script language='javascript'>window.location='Remove_sc_from_cs_select.php';</script>";
 
