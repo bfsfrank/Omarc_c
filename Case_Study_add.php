@@ -60,7 +60,7 @@ form.submit();
       </tr>
       <tr>
         <td  align="center">&nbsp;</td>
-        <td><input name="Submit" type="submit" title="In next stages, the sounds and visits may be added to this Case Study!" class="btn btn-success" value="Next Stage" onClick="return check(form1)">&nbsp;
+        <td><input name="Submit" type="submit" title="In next stages, the sounds and visits may be added to this Case Study!" class="btn btn-success" value="Add Case Study" onClick="return check(form1)">&nbsp;
 			<input name="Submit2" title="Give up to create a new Case Study!" type="button" class="btn btn-danger" value="Cancel" onClick="history.back();"></td>
       </tr>
     </table>

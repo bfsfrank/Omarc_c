@@ -125,7 +125,7 @@ $info_sc=mysql_fetch_array($sql);
 </script>
 
 <div class="container" align="center" width="75%" >
-   <h4 align="center">Add Visit</h4>
+   <h4 align="center">Modify Visit</h4>
    <div align="center" class="row" >
 
       <div align="center" width="75%" >

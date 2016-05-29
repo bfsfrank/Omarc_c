@@ -101,7 +101,7 @@ $("#upload").click(function(e) {
 </td>
 </table>  
     <tr align="center" height="22" class="word_orange">
-            <td height="22" class="word_orange" >If your sounds are already uploaded, please add visits directly!
+            <td height="22" class="word_orange" >If your sounds are already uploaded, please add visits!
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		<input type="button"  align="right" class="btn btn-primary" value="Add visits" onClick="window.location.href='add_se.php'" />
 		<input name="Submit2" type="button" class="btn btn-danger" value="Back to Index" onClick="window.location.href='index.php'"/> 
